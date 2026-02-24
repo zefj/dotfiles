@@ -1,0 +1,6 @@
+[tools]
+bun = "latest"
+fzf = "latest"
+gh = "latest"
+node = "24"
+
