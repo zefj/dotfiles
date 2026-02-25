@@ -46,7 +46,7 @@ Never skip step 1.
 
 - Never delete or remove files without asking first. Includes temporary files, fixtures, snapshots.
 - Never stage files (`git add`) without asking first.
-- Never commit without asking first.
+- Never commit without asking first. Always print the proposed commit message and wait for approval before running `git commit`.
 - When copying/moving files: ALWAYS verify the copy/move succeeded before deleting originals. Never chain `cp` and `rm` in a way where `rm` runs regardless of `cp` success. Check each step independently.
 
 ## Task Tracking
