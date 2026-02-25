@@ -11,7 +11,7 @@ echo "==> Installing brew formulae"
 brew install git-absorb stow tmux mise
 
 echo "==> Installing brew casks"
-brew install --cask kitty font-jetbrains-mono-nerd-font visual-studio-code
+brew install --cask --adopt kitty font-jetbrains-mono-nerd-font visual-studio-code
 
 echo "==> Installing mise tools"
 mise install
