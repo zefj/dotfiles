@@ -1,11 +1,26 @@
 {
   "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "printf '\\a' > $(tmux display-message -p -t \"$TMUX_PANE\" '#{pane_tty}')"
+          }
+        ]
+      }
+    ],
     "Stop": [
       {
         "hooks": [
           {
             "type": "command",
             "command": "afplay /System/Library/Sounds/Funk.aiff"
+          },
+          {
+            "type": "command",
+            "command": "printf '\\a' > $(tmux display-message -p -t \"$TMUX_PANE\" '#{pane_tty}')"
           }
         ]
       }
