@@ -24,3 +24,6 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # mise
 eval "$(mise activate zsh)"
+
+# Secrets
+[[ -f ~/.secrets ]] && source ~/.secrets
