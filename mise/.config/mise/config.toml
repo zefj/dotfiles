@@ -7,4 +7,5 @@ bun = "latest"
 fzf = "latest"
 gh = "latest"
 node = "24"
+pnpm = "latest"
 
