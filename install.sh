@@ -16,6 +16,9 @@ brew install --cask --adopt kitty font-jetbrains-mono-nerd-font visual-studio-co
 echo "==> Installing mise tools"
 mise install
 
+echo "==> Installing global pnpm packages"
+pnpm add -g @playwright/cli
+
 echo "==> Installing Oh My Zsh (if needed)"
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
