@@ -49,6 +49,10 @@ Never skip step 1.
 - Never commit without asking first. Always print the proposed commit message and wait for approval before running `git commit`.
 - When copying/moving files: ALWAYS verify the copy/move succeeded before deleting originals. Never chain `cp` and `rm` in a way where `rm` runs regardless of `cp` success. Check each step independently.
 
+## Package Manager
+
+Never assume the package manager. Always check the lock file (`yarn.lock`, `pnpm-lock.yaml`, `package-lock.json`, `bun.lockb`) or `packageManager` field in `package.json` before running install/run/exec commands. Use the correct one for each repo.
+
 ## Task Tracking
 
 Use the built-in TaskCreate/TaskList system for tracking within a session. For cross-session persistence within a project, write plans and progress to `tasks/todo.md`.
